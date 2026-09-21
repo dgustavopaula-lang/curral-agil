@@ -1,0 +1,9 @@
+{
+  "name": "Curral Ágil",
+  "short_name": "Curral Ágil",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f4f6f4",
+  "theme_color": "#1b5e20",
+  "lang": "pt-BR"
+}

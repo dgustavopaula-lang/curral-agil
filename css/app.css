@@ -1,0 +1,165 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f6f4;
+  color: #1f2933;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 85px;
+}
+
+header {
+  background: #1b5e20;
+  color: white;
+  padding: 22px 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 26px;
+}
+
+header p {
+  margin: 5px 0 0;
+  opacity: .85;
+}
+
+#statusRede {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+main {
+  max-width: 650px;
+  margin: auto;
+  padding: 18px;
+}
+
+section {
+  background: white;
+  margin-bottom: 18px;
+  padding: 18px;
+  border-radius: 14px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.card {
+  background: #eef5ef;
+  padding: 18px;
+  border-radius: 12px;
+}
+
+.card strong {
+  display: block;
+  font-size: 30px;
+  color: #1b5e20;
+}
+
+.card span {
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  min-height: 56px;
+  margin-top: 7px;
+  border-radius: 10px;
+  font-size: 17px;
+}
+
+input,
+select {
+  border: 1px solid #bbb;
+  padding: 12px;
+  background: white;
+}
+
+button {
+  border: 0;
+  background: #1b5e20;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.animal {
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.animal:last-child {
+  border-bottom: 0;
+}
+
+.animal strong {
+  display: block;
+  font-size: 18px;
+}
+
+.animal span {
+  color: #667;
+}
+
+.titulo-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contadorRebanho {
+  background: #1b5e20;
+  color: white;
+  min-width: 32px;
+  text-align: center;
+  padding: 6px;
+  border-radius: 20px;
+}
+
+nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: white;
+  border-top: 1px solid #ccc;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  padding: 6px;
+}
+
+nav button {
+  background: transparent;
+  color: #555;
+  min-height: 55px;
+  font-size: 13px;
+  margin: 0;
+}
+
+nav button.ativo {
+  color: #1b5e20;
+}
