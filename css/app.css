@@ -163,3 +163,39 @@ nav button {
 nav button.ativo {
   color: #1b5e20;
 }
+
+
+/* PWA-STANDALONE-V2 */
+
+html {
+  min-height: 100%;
+  background: #f4f6f4;
+  overscroll-behavior-y: none;
+}
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  -webkit-tap-highlight-color: transparent;
+}
+
+header {
+  padding-top: calc(22px + env(safe-area-inset-top));
+}
+
+nav {
+  padding-bottom: max(6px, env(safe-area-inset-bottom));
+}
+
+@media (display-mode: standalone) {
+  body {
+    user-select: none;
+    -webkit-user-select: none;
+  }
+
+  input,
+  select {
+    user-select: text;
+    -webkit-user-select: text;
+  }
+}
